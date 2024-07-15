@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base target="_top">
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+
+<body id="bg" class="bg">
+    <div class="container">
+        <div class="logo">
+            <img src="../BTIPL_Desktop-removebg-preview Center.png" alt="" id="logo">
+            <p class="companyName" id="companyName">
+                Company Name
+            </p>
+        </div>
+        <hr class="hr-01">
+        <div class="inputGroup">
+            <label for="username" style="padding: 0 0 0.2rem 0;"><b>Username:</b></label>
+            <input class="input-box-1" type="text" id="username" name="username" placeholder="User id" required />
+            <div class="error-msg" id="usernameError"></div>
+        </div>
+        <div class="inputGroup">
+            <label for="password" style="padding: 0 0 0.2rem 0;"><b>Password:</b></label>
+            <div class="passwordInputBox-1">
+                <input class="input-box-1" type="password" id="password" name="password" placeholder="Password"
+                    required />
+                <span class="toggle-password" onclick="togglePasswordVisibility()">👁️‍🗨️</span>
+            </div>
+            <div class="error-msg" id="passwordError"></div>
+        </div>
+        <hr class="hr-01">
+        <div class="inputGroup">
+            <button type="submit" id="loginButton" class="login-btn button" onclick="toggleLoadingState(this)">Log
+                In</button>
+            <div class="error-msg" id="invalidDetails"></div>
+        </div>
+        <div class="popup" id="popup">
+            <img src="../tick.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Login Sucessful</p>
+            <a href="" id='loginURL'>OK</a>
+        </div>
+    </div>
+
+</body>
+<script src="loginPage.js"></script>
+
+</html>
